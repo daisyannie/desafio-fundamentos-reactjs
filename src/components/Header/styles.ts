@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 interface ContainerProps {
@@ -22,6 +23,12 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+
+        &.current {
+          padding: 4px;
+          border-bottom: solid 2px;
+          border-bottom-color: #ff872c;
+        }
 
         & + a {
           margin-left: 32px;
